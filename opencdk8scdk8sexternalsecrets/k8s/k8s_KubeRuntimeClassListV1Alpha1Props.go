@@ -1,0 +1,16 @@
+package k8s
+
+
+// RuntimeClassList is a list of RuntimeClass objects.
+// Experimental.
+type KubeRuntimeClassListV1Alpha1Props struct {
+	// Items is a list of schema objects.
+	// Experimental.
+	Items *[]*KubeRuntimeClassV1Alpha1Props `field:"required" json:"items" yaml:"items"`
+	// Standard list metadata.
+	//
+	// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+	// Experimental.
+	Metadata *ListMeta `field:"optional" json:"metadata" yaml:"metadata"`
+}
+

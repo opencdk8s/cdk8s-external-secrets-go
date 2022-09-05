@@ -1,0 +1,14 @@
+package k8s
+
+
+// CSIStorageCapacityList is a collection of CSIStorageCapacity objects.
+// Experimental.
+type KubeCsiStorageCapacityListV1Alpha1Props struct {
+	// Items is the list of CSIStorageCapacity objects.
+	// Experimental.
+	Items *[]*KubeCsiStorageCapacityV1Alpha1Props `field:"required" json:"items" yaml:"items"`
+	// Standard list metadata More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
+	// Experimental.
+	Metadata *ListMeta `field:"optional" json:"metadata" yaml:"metadata"`
+}
+
